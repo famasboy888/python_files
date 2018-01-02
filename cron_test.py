@@ -4,6 +4,6 @@ sched = BlockingScheduler()
 
 @sched.scheduled_job('cron', hour=9)
 def scheduled_job():
-    print('This job is run every weekday at 5pm.')
+    print('This job is run every weekday at 9am.')
 
 sched.start()
